@@ -9,9 +9,9 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "vite build",  
-    "deploy": "gh-pages -d dist -b ready"  
+    "deploy": "gh-pages -d dist"  
   },
-  "homepage": "https://LuisFerdinand.github.io/BepiWeb",  
+  "homepage": "https://LuisFerdinand.github.io/BepiWebsite",  
   "dependencies": {
     "axios": "^1.7.3",
     "instafeed": "^1.4.0",
