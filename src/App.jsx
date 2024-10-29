@@ -16,11 +16,11 @@ function App() {
       <>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/music-video" element={<MusicVideo />} />
-          <Route path="/career" element={<Career />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/BepiWebsite/" element={<Home />} />
+          <Route path="/BepiWebsite/about" element={<About />} />
+          <Route path="/BepiWebsite/music-video" element={<MusicVideo />} />
+          <Route path="/BepiWebsite/career" element={<Career />} />
+          <Route path="/BepiWebsite/contact" element={<Contact />} />
         </Routes>
         <MusicPlayer />
       </>
