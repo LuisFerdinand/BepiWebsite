@@ -218,7 +218,7 @@ const YoutubeChannel = ({ onVideoClick }) => {
               clickable: true,
               dynamicBullets: true,
             }}
-            scrollbar={{ el: ".swiper-scrollbar", draggable: true }}
+            // scrollbar={{ el: ".swiper-scrollbar", draggable: true }}
             modules={[
               Mousewheel,
               Keyboard,
@@ -282,7 +282,7 @@ const YoutubeChannel = ({ onVideoClick }) => {
                 style={iconStyles}
               />
             </div> */}
-            <div className="swiper-scrollbar"></div>
+            {/* <div className="swiper-scrollbar"></div> */}
             <div className="swiper-pagination js-swiper-pagination-recent"></div>
           </Swiper>
         </div>
@@ -302,7 +302,7 @@ const YoutubeChannel = ({ onVideoClick }) => {
               clickable: true,
               // dynamicBullets: true,
             }}
-            scrollbar={{ draggable: true }}
+            // scrollbar={{ draggable: true }}
             modules={[
               Mousewheel,
               Keyboard,
@@ -386,7 +386,7 @@ const YoutubeChannel = ({ onVideoClick }) => {
               clickable: true,
               // dynamicBullets: true,
             }}
-            scrollbar={{ draggable: true }}
+            // scrollbar={{ draggable: true }}
             modules={[
               Mousewheel,
               Keyboard,

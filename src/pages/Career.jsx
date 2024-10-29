@@ -5,11 +5,11 @@ import { GrFormPrevious } from "react-icons/gr";
 import Footer from '../components/Footer'
 
 // importing images
-import firstImg from '../assets/img/music-section-images.avif';
+import firstImg from '../assets/img/nobg/Bepi 2.png';
 import nobgImg from '../assets/img/about.png';
 import mc1 from '../assets/img/career property/MC/Francis Pope.jpg';
 import mc2 from '../assets/img/career property/MC/Malaysia.jpg';
-import judges from '../assets/img/career property/judges.avif'
+import judges from '../assets/img/career property/Judges/bepi.jpg'
 import imgABC from '../assets/img/career property/BA/ABC BA 1.jpg';
 import imgAeroDili from '../assets/img/career property/BA/Aero Dili.jpg';
 import imgAirTimor from '../assets/img/career property/BA/Air Timor 1.jpg';
@@ -132,11 +132,10 @@ function Career() {
                 <img src={judges} className='judges-img' />
                 <div className='text-content'>
                   <div className='content-header'>
-                    <h3>Sub Title</h3>
-                    <p>2000 - 2010</p>
+                    <h3>MEHI music competition</h3>
+                    <p>2024</p>
                   </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consequuntur laboriosam autem eveniet nisi eaque cupiditate! Voluptates sunt, assumenda officiis recusandae, maxime delectus dolor nihil officia numquam est, velit maiores.</p>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis delectus porro at voluptas officia quibusdam, in quod maxime voluptates optio velit fuga officiis consectetur reprehenderit itaque iure enim unde consequatur vitae laboriosam perspiciatis rem ut. Perspiciatis possimus a dolorem aliquid?</p>
+                  <p>In the debut season of the MEHI music competition, Bepi brings a unique blend of expertise, charisma, and genuine passion for music to the judging panel. Known for his sharp ear and extensive background in the industry, Bepi quickly establishes himself as a mentor and motivator, pushing contestants to explore their potential fully. His feedback is constructive yet challenging, encouraging participants to take creative risks and refine their skills. Bepi’s presence on the panel not only adds a layer of professionalism to the show but also creates an inspiring atmosphere for aspiring artists, making MEHI a captivating platform for musical talent to shine.</p>
                 </div>
               </div>
             </section>

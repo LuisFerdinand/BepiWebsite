@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/About.css'
-import bgimg from '../assets/img/about.png'
+import bgimg from '../assets/img/nobg/Bepi 1.png'
 import mixer from '../assets/img/about2.jpg'
 import Footer from '../components/Footer'
 

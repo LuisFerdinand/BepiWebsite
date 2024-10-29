@@ -8,12 +8,13 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "vite build",  
-    "deploy": "gh-pages -d dist"  
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://LuisFerdinand.github.io/BepiWebsite",  
+  "homepage": "https://LuisFerdinand.github.io/BepiWebsite",
   "dependencies": {
     "axios": "^1.7.3",
+    "flowbite": "^2.5.2",
     "instafeed": "^1.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
