@@ -59,19 +59,19 @@ const Navbar = () => {
       )}
 
       <ul className={`desktop-menu ${scrolled ? 'scrolled' : ''}`}>
-        <li><Link to="/BepiWebsite/" className={activeLink === '/' ? 'active' : ''}>Home</Link></li>
-        <li><Link to="/BepiWebsite/about" className={activeLink === '/about' ? 'active' : ''}>About</Link></li>
-        <li><Link to="/BepiWebsite/music-video" className={activeLink === '/music-video' ? 'active' : ''}>Music Video</Link></li>
-        <li><Link to="/BepiWebsite/career" className={activeLink === '/career' ? 'active' : ''}>Career</Link></li>
-        <li><Link to="/BepiWebsite/contact" className={activeLink === '/contact' ? 'active' : ''}>Contact</Link></li>
+        <li><Link to="/BepiWebsite/" className={activeLink === '/BepiWebsite/' ? 'active' : ''}>Home</Link></li>
+        <li><Link to="/BepiWebsite/about" className={activeLink === '/BepiWebsite/about' ? 'active' : ''}>About</Link></li>
+        <li><Link to="/BepiWebsite/music-video" className={activeLink === '/BepiWebsite/music-video' ? 'active' : ''}>Music Video</Link></li>
+        <li><Link to="/BepiWebsite/career" className={activeLink === '/BepiWebsite/career' ? 'active' : ''}>Career</Link></li>
+        <li><Link to="/BepiWebsite/contact" className={activeLink === '/BepiWebsite/contact' ? 'active' : ''}>Contact</Link></li>
       </ul>
 
       <ul ref={mobileMenuRef} className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}>
-        <li><Link to="/BepiWebsite/" className={activeLink === '/' ? 'active' : ''} onClick={closeMobileMenu}>Home</Link></li>
-        <li><Link to="/BepiWebsite/about" className={activeLink === '/about' ? 'active' : ''} onClick={closeMobileMenu}>About</Link></li>
-        <li><Link to="/BepiWebsite/music-video" className={activeLink === '/music-video' ? 'active' : ''} onClick={closeMobileMenu}>Music Video</Link></li>
-        <li><Link to="/BepiWebsite/career" className={activeLink === '/career' ? 'active' : ''} onClick={closeMobileMenu}>Career</Link></li>
-        <li><Link to="/BepiWebsite/contact" className={activeLink === '/contact' ? 'active' : ''} onClick={closeMobileMenu}>Contact</Link></li>
+        <li><Link to="/BepiWebsite/" className={activeLink === '/BepiWebsite/' ? 'active' : ''} onClick={closeMobileMenu}>Home</Link></li>
+        <li><Link to="/BepiWebsite/about" className={activeLink === '/BepiWebsite/about' ? 'active' : ''} onClick={closeMobileMenu}>About</Link></li>
+        <li><Link to="/BepiWebsite/music-video" className={activeLink === '/BepiWebsite/music-video' ? 'active' : ''} onClick={closeMobileMenu}>Music Video</Link></li>
+        <li><Link to="/BepiWebsite/career" className={activeLink === '/BepiWebsite/career' ? 'active' : ''} onClick={closeMobileMenu}>Career</Link></li>
+        <li><Link to="/BepiWebsite/contact" className={activeLink === '/BepiWebsite/contact' ? 'active' : ''} onClick={closeMobileMenu}>Contact</Link></li>
         <li><div className="close" id='close' onClick={closeMobileMenu}>
           <IoMdClose size={40} color="#fff" />
         </div>
