@@ -23,15 +23,20 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("//serverwebsite", {
+    const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
       },
-      body: JSON.stringify(formDetails),
+      body: JSON.stringify({
+        access_key: "c41ba285-8635-4cc2-9a07-e3d53396d5f7",
+        name: formDetails.firstName,
+        email: formDetails.email,
+        message: formDetails.message,
+      }),
     });
     setButtonText("Send");
-    let result = await response.json();
+    const result = await response.json();
     setFormDetails(formInitialDetails);
     if (result.code === 200) {
       setStatus({ success: true, message: "Message sent successfully!" });
@@ -43,22 +48,6 @@ export const Contact = () => {
     }
   };
 
-  const handleIconClick = (type) => {
-    switch (type) {
-      case "location":
-        window.open("https://www.google.com/maps?q=Travessa+10+de+Outubro+no.+9,+Palapasso+-+Dili,+Timor-Leste", "_blank");
-        break;
-      case "phone":
-        window.location.href = "https://wa.me/+6285248209388";
-        break;
-      case "email":
-        window.location.href = "mailto:bepi.management@gmail.com";
-        break;
-      default:
-        break;
-    }
-  };
-
   return (
     <>
       <section className="contact-section" id="connect">
@@ -67,34 +56,23 @@ export const Contact = () => {
             <h2 className="contact-heading">Get In Touch</h2>
             <div className="info-wrap">
               <div className="contact-dbox">
-                <span
-                  className="contact-icon fa fa-map-marker"
-                  onClick={() => handleIconClick("location")}
-                ></span>
+                <span className="contact-icon fa fa-map-marker"></span>
                 <p className="contact-text">
-                  Travessa 10 de Outubro no. 9 <br /> Palapasso - Dili, Timor-Leste
+                  Jakarta, Indonesia
                 </p>
               </div>
-              <div className="contact-dbox">
-                <span
-                  className="contact-icon fa fa-phone"
-                  onClick={() => handleIconClick("phone")}
-                ></span>
+              <a href="https://wa.me/67077425220" target="blank" className="contact-dbox">
+                <span className="contact-icon fa fa-phone"></span>
                 <p className="contact-text">
-                  <a href="https://wa.me/+6285248209388">+67077425220</a>
+                  +67077425220
                 </p>
-              </div>
-              <div className="contact-dbox">
-                <span
-                  className="contact-icon fa fa-paper-plane"
-                  onClick={() => handleIconClick("email")}
-                ></span>
+              </a>
+              <a href="mailto:bepi.management@gmail.com" target="blank" className="contact-dbox">
+                <span className="contact-icon fa fa-paper-plane"></span>
                 <p className="contact-text">
-                  <a href="mailto:ferdinandluis88@gmail.com">
-                    bepi.management@gmail.com
-                  </a>
+                  bepi.management@gmail.com
                 </p>
-              </div>
+              </a>
             </div>
           </div>
           <div className="contact-form-wrap">
